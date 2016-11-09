@@ -7,6 +7,7 @@ from basic import basic
 class Menu(object):
 	def __init__(self):
 		pass
+		
 	def create(self, postData, accessToken):
 		postUrl = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=%s" % accessToken
 		if isinstance(postData, unicode):
