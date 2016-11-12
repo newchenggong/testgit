@@ -30,7 +30,7 @@ class TextMsg(Msg):
 class ImageMsg(Msg):
 	def __init__(self,xmlData):
 		# Msg.__init__(self,xmlData)
-		super(TextMsg,self).__init__(xmlData)
+		super(TextMsg,self).__init__(xmlData) 
 		self.PicUrl = xmlData.find('PicUrl').text
 		self.MediaId = xmlData.find('MediaId').text
 		
